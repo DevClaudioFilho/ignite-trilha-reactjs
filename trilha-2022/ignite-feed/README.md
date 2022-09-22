@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Ignite Feed" title="Ignite Feed" width="200px"  src="https://github.com/DevClaudioFilho/ignite-trilha-reactjs/blob/main/_readmeImg/logo.jpg?raw=true" />
+  <img alt="Ignite Feed" title="Ignite Feed" width="200px"  src="https://github.com/DevClaudioFilho/ignite-trilha-reactjs/blob/main/trilha-2022/ignite-feed/_readmeAssets/logo.jpg" />
 </h1>
 
 <h3 align="center">
@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img alt="Ignite Feed Preview" src="https://github.com/DevClaudioFilho/ignite-trilha-reactjs/blob/main/_readmeImg/preview.jpg?raw=true" width="100%">
+  <img alt="Ignite Feed Preview" src="https://github.com/DevClaudioFilho/ignite-trilha-reactjs/blob/main/trilha-2022/ignite-feed/_readmeAssets/preview.jpg" width="100%">
 </p>
 
 ## 👩‍💻 About the project
