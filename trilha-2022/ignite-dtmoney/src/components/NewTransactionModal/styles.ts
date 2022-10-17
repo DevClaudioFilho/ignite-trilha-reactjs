@@ -73,18 +73,18 @@ export const CloseButton = styled(Dialog.Close)`
 
 `
 
-export const TrasactionType = styled(RadioGroup.Root)`
+export const TransactionType = styled(RadioGroup.Root)`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 0.5rem;
 `
 
-interface TrasactionTypeButtonProps{
+interface TransactionTypeButtonProps{
   variant: 'income'|'outcome';
 }
 
-export const TrasactionTypeButton = styled(RadioGroup.Item)<TrasactionTypeButtonProps>`
+export const TransactionTypeButton = styled(RadioGroup.Item)<TransactionTypeButtonProps>`
   background: ${props=> props.theme["gray-700"]};
   padding: 1rem;
   display: flex;
