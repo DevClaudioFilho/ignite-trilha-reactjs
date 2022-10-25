@@ -1,32 +1,36 @@
-import { useContext } from "react";
-import { Header } from "../../components/Header";
-import { Sumary } from "../../components/Summary";
-import { TransactionsContext } from "../../context/TransactionsContext";
-import { dateFormatter, priceFormatter } from "../../utils/formatter";
-import { SearchForm } from "./components/SearchForm";
-import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
+import { useContext } from 'react'
+import { Header } from '../../components/Header'
+import { Sumary } from '../../components/Summary'
+import { TransactionsContext } from '../../context/TransactionsContext'
+import { dateFormatter, priceFormatter } from '../../utils/formatter'
+import { SearchForm } from './components/SearchForm'
+import {
+  PriceHighlight,
+  TransactionsContainer,
+  TransactionsTable,
+} from './styles'
 
 export function Transaction() {
-  const {transactions}= useContext(TransactionsContext)
-  return(
+  const { transactions } = useContext(TransactionsContext)
+  return (
     <div>
-      <Header/>
-      <Sumary/>
+      <Header />
+      <Sumary />
 
       <TransactionsContainer>
-        <SearchForm/>
+        <SearchForm />
 
         <TransactionsTable>
           <tbody>
-            {transactions.map(transaction =>(
+            {transactions.map((transaction) => (
               <tr key={transaction.id}>
                 <td width="50%">{transaction.description}</td>
                 <td>
                   <PriceHighlight variant={transaction.type}>
-                      {transaction.type=='outcome' && '- ' }
-                      {priceFormatter.format(transaction.price) }
+                    {transaction.type === 'outcome' && '- '}
+                    {priceFormatter.format(transaction.price)}
                   </PriceHighlight>
-                  </td>
+                </td>
                 <td>{transaction.category}</td>
                 <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
               </tr>
